@@ -1,0 +1,13 @@
+.custom-card {
+    max-width: 300px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the card horizontally */
+  
+  }
+  
+  .custom-card-img {
+    /* Adjust the height as needed */
+    
+
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+  

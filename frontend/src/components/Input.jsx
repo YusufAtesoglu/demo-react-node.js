@@ -1,8 +1,16 @@
-const Input = ({ handleChange, value, title, name, color }) => {
+import React from 'react';
+
+const Input = ({ handleChange, value, title, name, checked }) => {
   return (
-    <label className="sidebar-label-container">
-      <input onChange={handleChange} type="radio" value={value} name={name} />
-      <span className="checkmark" style={{ backgroundColor: color }}></span>
+    <label className="flex items-center space-x-2">
+          <input
+        type="checkbox"
+        name={name}
+        checked={checked}
+        onChange={handleChange}
+        className="form-checkbox"
+        value={value}
+      />
       {title}
     </label>
   );
